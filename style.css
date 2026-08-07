@@ -1,71 +1,91 @@
 @charset "UTF-8";
 
-*{margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif;}
+/* Adicionado box-sizing para que paddings e bordas não aumentem o tamanho total dos elementos */
+* {
+    margin: 0px; 
+    padding: 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+}
 
-html body{
+html, body {
     width: 100%;
-    height: 100%;
-}
-body{
-    background-color: purple;
+    min-height: 100dvh; /* Usa a altura dinâmica do celular */
 }
 
-#imagem{
+/* Usamos Flexbox no body para centralizar o formulário sem cortar em telas pequenas */
+body {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px; /* Garante margem nas bordas no celular */
+}
+
+main {
+    border: 2px double black;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%; /* Ocupa a largura disponível */
+    max-width: 450px; /* Mas não passa de 450px em telas grandes */
+    overflow: hidden; /* Mantém os cantos arredondados bonitos */
+}
+
+#imagem {
     border-radius: 10px 10px 0px 0px;
-    background-image: url(Imagem/cidade.jpg.jpg) ;
+    background-image: url(Imagem/cidade.jpg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 450px;
-    height: 400px;
+    width: 100%;
+    height: 250px; /* Reduzido levemente para caber melhor na tela na vertical */
 }
-main{
-    border: 2px double black;
-    border-radius: 10px;
-    position: absolute;
-    background-color: white;
-    width: 450px;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
 
-}
-h1{
+h1 {
     margin-top: 10px;
     text-align: center;
 }
-p{
-    font-size: 1.5em;
-    padding: 1px;
+
+p {
+    font-size: 1.2em; /* Ajustado para não ficar exagerado na tela do celular */
     padding: 5px;
 }
-#usuario{
+
+#usuario {
     border: none;
-    text-align: left;;
+    text-align: left;
 }
-input{
+
+/* O INPUT AGORA É RESPONSIVO */
+input {
     border-radius: 15px;
     text-indent: 5px;
-    font-size: 2em;
-    height: 70px;
-    padding-bottom: 0px;
-    width: 365px;
-    transform: translateY(-9px);
+    font-size: 1.2em; /* Ajustado para não quebrar */
+    height: 50px;
+    width: 100%; /* Garante que ele se adapte a qualquer tamanho de caixa */
 }
-fieldset{
+
+fieldset {
     background-color: purple;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
 }
-form{
-    padding: 5px;
+
+form {
+    padding: 15px;
 }
-img{
-    transform: translateY(7px);
+
+img {
+    transform: translateY(2px);
 }
-#env{
+
+#env {
     border-radius: 15px;
     background-color: cyan;
     margin-top: 15px;
     width: 100%;
+    height: 50px;
+    cursor: pointer;
 }
