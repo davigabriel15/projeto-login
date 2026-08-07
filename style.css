@@ -9,42 +9,53 @@ html body{
 body{
     background-color: purple;
 }
-main{
-    background-color: white;
-    border-radius: 20px;
-    width: 450px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-}
+
 #imagem{
-    border-radius: 20px 20px 0px 0px;
-    width: 450px;
-    height: 300px;
-    background-color: black;
-    background-image: url(Imagem/cidade.jpg.jpg);
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(Imagem/cidade.jpg.jpg) ;
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
+    background-position: center center;
+    width: 450px;
+    height: 400px;
+}
+main{
+    border: 2px double black;
+    border-radius: 10px;
+    position: absolute;
+    background-color: white;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
 }
 h1{
     text-align: center;
-    padding: 10px;
 }
 p{
-    padding: 10px;
     font-size: 1.5em;
+    padding: 1px;
+    padding: 5px;
 }
-label{
-    color: white;
-    display: inline-block;
-    background-color: purple;
-}
-fieldset#usuario{
-    background-color: purple;
-    padding: 10px
+#usuario{
+    border: none;
+    text-align: left;;
 }
 input{
-    text-align: center;
+    font-size: 2em;
+    height: 70px;
+    padding-bottom: 0px;
+    width: 365px;
+    transform: translateY(-9px);
+}
+fieldset{
+    background-color: purple;
+    border-radius: 5px;
+}
+form{
+    padding: 5px;
+}
+img{
+    transform: translateY(7px);
 }
