@@ -14,11 +14,19 @@
         <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder 
             fazer as configurações do seu ambiente.
         </p>
-        <form action="cadstro">
+        <form action="cadastro">
             <fieldset id="usuario">
-                <label for="iusu"><img src="Imagem/icone_de_conta.png.png" alt=""></label>
-                <input type="email" name="usu" id="iusu" placeholder="Seu e-mail">
+                <label for="iusu"><img src="Imagem/icone_de_conta.png.png" alt="Icone de login"></label>
+                <input type="email" name="usu" id="iusu" placeholder="Seu e-mail" required>
             </fieldset>
+
+            <fieldset id="usuario">
+                <label for="icha"><img src="Imagem/icone_de_chave.png" alt="Icone de Chave"></label>
+                <input type="password" name="cha" id="icha" placeholder="Sua senha" required>
+            </fieldset>
+
+            <input type="submit" value="Entrar" id="env">
+
         </form>
     </main>
 </body>

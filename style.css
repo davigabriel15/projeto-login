@@ -31,6 +31,7 @@ main{
 
 }
 h1{
+    margin-top: 10px;
     text-align: center;
 }
 p{
@@ -43,6 +44,8 @@ p{
     text-align: left;;
 }
 input{
+    border-radius: 15px;
+    text-indent: 5px;
     font-size: 2em;
     height: 70px;
     padding-bottom: 0px;
@@ -52,10 +55,17 @@ input{
 fieldset{
     background-color: purple;
     border-radius: 5px;
+    margin-bottom: 5px;
 }
 form{
     padding: 5px;
 }
 img{
     transform: translateY(7px);
+}
+#env{
+    border-radius: 15px;
+    background-color: cyan;
+    margin-top: 15px;
+    width: 100%;
 }
