@@ -3,6 +3,14 @@
 @media screen and (min-width: 678px){
     body{
         background-image: linear-gradient(to bottom,  purple, rgb(255, 163, 163) ,pink);
-
     }
+    #imagem {
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(Imagem/cidade.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 250px;
+}
 }
