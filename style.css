@@ -10,7 +10,7 @@
 
 html, body {
     width: 100%;
-    height: 100vh; /* Usa a altura dinâmica do celular */
+    min-height: 100dvh; /* Usa a altura dinâmica do celular */
 }
 
 /* Usamos Flexbox no body para centralizar o formulário sem cortar em telas pequenas */
